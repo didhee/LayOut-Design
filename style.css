@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAFAFA;
+    color: #353535;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #192BC2;
+}
+
+header ul {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: inherit;
+}
+
+a:hover, button:hover {
+    opacity: 0.3;
+    font-style: oblique;
+}
+
+header button {
+    width: 200px;
+    height: 40px;
+    border: 2px solid #192BC2;
+    border-radius: 4px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+    background-color: #192BC2;
+    color: #F3F3F3;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.grid1 img {
+    width: 100%;
+    height: 84%;
+    position: relative;
+    top: 14%;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+
+.grid2 img, .grid3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    margin-bottom: 15px;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(200px auto);
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-bottom: 15px;
+} 
+
+.grid4 img {
+    width: 100%;
+    height: 85vh;
+}
+
+.grid4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 15px;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #FFFFFF;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    line-height: 29px;
+}
+
+footer a {
+    text-decoration: none;
+    display: block;
+    color: #353535;
+}
+
+footer h4 {
+    position: relative;
+    right: 10px;
+}
